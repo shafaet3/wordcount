@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+</head>
+<body align="center" bgcolor="#00FFFF">
+	<button><a href="{% url 'home' %}">Back</a></button>
+	<h1 style="background-color: #00FF00;">COUNTED!</h1>
+	<h2 style="background-color: #FAEBD7;">Your Text:</h2>
+	<p>{{ text }}</p>
+	<h2 style="background-color: #FAEBD7;">Total Words:</h2>
+	<p>Total Words = {{ word_count }}</p>
+	{% for key, value in word_dictionary %}
+	<p>{{ key }} = {{ value }}</p>
+	{% endfor %}
+</body>
+</html>

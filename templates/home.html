@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Frequency Counter</title>
+</head>
+<body align="center" bgcolor="#00FFFF">
+	<h1 style="background-color: #FAEBD7;">COUNT WORD FREQUENCY</h1>
+	<p><b>Write Any Sentence. Then Click Count Button!</b></p>
+	<form action="{% url 'count' %}">
+		<textarea rows="10" cols="40" name="textarea"></textarea><br>
+		<input type="submit" name="click" value="Count">
+	</form>
+</body>
+</html>
